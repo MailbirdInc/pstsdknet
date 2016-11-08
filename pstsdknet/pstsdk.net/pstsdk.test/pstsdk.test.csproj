@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{785FC1FB-F94A-4FB6-86EE-9DC93E84ABA7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>pstsdk.test</RootNamespace>
+    <AssemblyName>pstsdk.test</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Gallio, Version=3.2.0.0, Culture=neutral, PublicKeyToken=eb9cfa67ee6ab36e, processorArchitecture=MSIL" />
+    <Reference Include="MbUnit, Version=3.2.0.0, Culture=neutral, PublicKeyToken=eb9cfa67ee6ab36e, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AttachmentTest.cs" />
+    <Compile Include="CRCTest.cs" />
+    <Compile Include="FolderTest.cs" />
+    <Compile Include="IAttachmentTest.cs" />
+    <Compile Include="IFolderTest.cs" />
+    <Compile Include="IMessageTest.cs" />
+    <Compile Include="Integration\AttachmentIntegrationTest.cs" />
+    <Compile Include="Integration\CRCIntegrationTest.cs" />
+    <Compile Include="Integration\EntryStreamReaderIntegrationTest.cs" />
+    <Compile Include="Integration\FolderIntegrationTest.cs" />
+    <Compile Include="Integration\GuidStreamReaderIntegrationTest.cs" />
+    <Compile Include="mocks\MockDBContexts\NameIdMapMockDBContext.cs" />
+    <Compile Include="mocks\MockPropBagConstants\StreamReaderMockConstants.cs" />
+    <Compile Include="mocks\MockPropBagConstants\NamedPropertyMockConstants.cs" />
+    <Compile Include="mocks\MockPropBagConstants\PropertyUtilsMockConstants.cs" />
+    <Compile Include="mocks\MockPropBagConstants\PstMockConstants.cs" />
+    <Compile Include="mocks\MockPropBagConstants\NameIdMapMockConstants.cs" />
+    <Compile Include="mocks\MockPropBagConstants\MockConstants.cs" />
+    <Compile Include="Integration\IntegrationUtil.cs" />
+    <Compile Include="Integration\MessageIntegrationTest.cs" />
+    <Compile Include="Integration\NameIdMapIntegrationTest.cs" />
+    <Compile Include="Integration\NamedPropertyIntegrationTest.cs" />
+    <Compile Include="Integration\PropertyUtilsIntegrationTest.cs" />
+    <Compile Include="Integration\PstIntegrationTest.cs" />
+    <Compile Include="Integration\RecipientIntegrationTest.cs" />
+    <Compile Include="Integration\SearchFolderIntegrationTest.cs" />
+    <Compile Include="Integration\StringStreamReaderIntegrationTest.cs" />
+    <Compile Include="IPstTest.cs" />
+    <Compile Include="IRecipientTest.cs" />
+    <Compile Include="ISearchFolderTest.cs" />
+    <Compile Include="MessageTest.cs" />
+    <Compile Include="mocks\MockDBContexts\AttachmentMockDBContext.cs" />
+    <Compile Include="mocks\MockDBContexts\SearchFolderMockDBContext.cs" />
+    <Compile Include="mocks\MockDBContexts\RecipientMockDBContext.cs" />
+    <Compile Include="mocks\MockDBContexts\MessageMockDBContext.cs" />
+    <Compile Include="mocks\MockDBContexts\FolderMockDBContext.cs" />
+    <Compile Include="mocks\MockDBContexts\MockDBContext.cs" />
+    <Compile Include="mocks\MockDBContexts\DifferentMockDBContext.cs" />
+    <Compile Include="mocks\MockPropBagConstants\AttachmentMockConstants.cs" />
+    <Compile Include="mocks\MockPropBagConstants\NameIdConstants.cs" />
+    <Compile Include="mocks\MockPropBagConstants\SearchFolderMockConstants.cs" />
+    <Compile Include="mocks\MockPropBagConstants\RecipientMockConstants.cs" />
+    <Compile Include="mocks\MockPropBagConstants\MessageMockConstants.cs" />
+    <Compile Include="mocks\MockPropBagConstants\FolderMockConstants.cs" />
+    <Compile Include="mocks\MockPropBagConstants\CRCMockConstants.cs" />
+    <Compile Include="mocks\MockPropBags\AttachmentMockPropBag.cs" />
+    <Compile Include="mocks\MockPropBags\NameIdMapMockPropBag.cs" />
+    <Compile Include="mocks\MockPropBags\FolderMockPropBag.cs" />
+    <Compile Include="mocks\MockPropBags\MessageMockPropBag.cs" />
+    <Compile Include="mocks\MockPropBags\SearchFolderMockPropBag.cs" />
+    <Compile Include="mocks\MockPropBags\RecipientMockPropBag.cs" />
+    <Compile Include="mocks\MockPropBags\MockPropBag.cs" />
+    <Compile Include="mocks\MockPropBags\DifferentMockPropBag.cs" />
+    <Compile Include="mocks\MockMessage.cs" />
+    <Compile Include="mocks\MockNamedProperty.cs" />
+    <Compile Include="mocks\MockNameIdMap.cs" />
+    <Compile Include="mocks\MockPst.cs" />
+    <Compile Include="mocks\DifferentMockPst.cs" />
+    <Compile Include="NameIdMapTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="PropertyUtilsTest.cs" />
+    <Compile Include="PstSdkIntegrationTest.cs" />
+    <Compile Include="PstTest.cs" />
+    <Compile Include="RecipientTest.cs" />
+    <Compile Include="SearchFolderTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Resources\sample1.pst" />
+    <None Include="Resources\sample2.pst" />
+    <None Include="Resources\small_test.pst" />
+    <None Include="Resources\submessage.pst" />
+    <None Include="Resources\test_ansi.pst" />
+    <None Include="Resources\test_unicode.pst" />
+    <Shadow Include="Test References\pstsdk.accessor" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\pstsdk.definition\pstsdk.definition.csproj">
+      <Project>{4CCADB3D-5DF5-47E3-BD52-0B1552C84C15}</Project>
+      <Name>pstsdk.definition</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\pstsdk.mcpp\pstsdk.mcpp.vcproj">
+      <Project>{A82CD6F8-EF49-49E3-AEFC-2D24623D3941}</Project>
+      <Name>pstsdk.mcpp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\pstsdk.csproj">
+      <Project>{26D91ACA-2735-4314-A648-8CD6F3589AAA}</Project>
+      <Name>pstsdk</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="interfaces\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

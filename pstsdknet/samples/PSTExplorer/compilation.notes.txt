@@ -1,0 +1,19 @@
+PSTExplorer Compilation Notes
+----------------------------------------
+
+Added dependency on DotNetOpenMail to support export to EML format... 
+
+Downloaded from:
+http://sourceforge.net/projects/dotnetopenmail/files/dotnetopenmail/0.5.8b/DotNetOpenMail-0.5.8b-src.zip/download
+
+I had to make some changes to enable proper saving... the DotNetOpenMail project was
+the only open source .Net native MIME library I could find that would write a EML (as
+opposed to parsing it). Unfortunately it seems the project has mostly been abandoned
+by it's maintainers, so I choose to include the source here, rather than attempting to 
+patch back to the main project. 
+
+We'll resolve this at a later time. 
+
+-thoward
+
+

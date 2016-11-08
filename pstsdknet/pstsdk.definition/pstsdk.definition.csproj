@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{4CCADB3D-5DF5-47E3-BD52-0B1552C84C15}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>pstsdk.definition</RootNamespace>
+    <AssemblyName>pstsdk.definition</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SignAssembly>false</SignAssembly>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Release\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="disk\bth\bth_entry.cs" />
+    <Compile Include="disk\bth\bth_header.cs" />
+    <Compile Include="disk\bth\bth_leaf_entry.cs" />
+    <Compile Include="disk\bth\bth_node.cs" />
+    <Compile Include="disk\bth\bth_nonleaf_entry.cs" />
+    <Compile Include="disk\heap\HeapClientSignature.cs" />
+    <Compile Include="disk\heap\HeapFillLevel.cs" />
+    <Compile Include="disk\page\amap_page.cs" />
+    <Compile Include="disk\header\ansi_header.cs" />
+    <Compile Include="disk\header\ansi_header_crc_locations.cs" />
+    <Compile Include="disk\page\ansi_page_trailer.cs" />
+    <Compile Include="disk\page\bbt_leaf_entry.cs" />
+    <Compile Include="disk\page\bbt_leaf_page.cs" />
+    <Compile Include="disk\page\bbt_nonleaf_page.cs" />
+    <Compile Include="exception\PstSdkRunTimeException.cs" />
+    <Compile Include="exception\PstSdkStdLibException.cs" />
+    <Compile Include="exception\PstSdkSEHException.cs" />
+    <Compile Include="exception\NoViableAlternativeException.cs" />
+    <Compile Include="exception\PstSdkException.cs" />
+    <Compile Include="ndb\database\Database.cs" />
+    <Compile Include="ndb\database\IDBAccessor.cs" />
+    <Compile Include="pst\message\AttachmentFlag.cs" />
+    <Compile Include="pst\message\AttachmentMethod.cs" />
+    <Compile Include="util\errors\CRCFailureException.cs" />
+    <Compile Include="util\errors\DatabaseCorruptException.cs" />
+    <Compile Include="ndb\database\IBBTLeafPage.cs" />
+    <Compile Include="ndb\database\IBBTNonLeafPage.cs" />
+    <Compile Include="ndb\database\IBBTPage.cs" />
+    <Compile Include="ndb\database\IBlockInfo.cs" />
+    <Compile Include="ndb\database\IBTLeafPage.cs" />
+    <Compile Include="ndb\database\IBTNonLeafPage.cs" />
+    <Compile Include="ndb\database\IBTPage.cs" />
+    <Compile Include="ndb\database\IDatabaseContext.cs" />
+    <Compile Include="ndb\database\INBTLeafPage.cs" />
+    <Compile Include="ndb\database\INBTNonLeafPage.cs" />
+    <Compile Include="ndb\database\INBTPage.cs" />
+    <Compile Include="ndb\database\INodeInfo.cs" />
+    <Compile Include="ndb\database\IPageInfo.cs" />
+    <Compile Include="ndb\database\ISubNodeInfo.cs" />
+    <Compile Include="util\errors\SignatureMismatchException.cs" />
+    <Compile Include="util\errors\UnexpectedBlockException.cs" />
+    <Compile Include="ndb\node\ExtendedBlockLevel.cs" />
+    <Compile Include="ndb\node\IBlock.cs" />
+    <Compile Include="ndb\node\IDataBlock.cs" />
+    <Compile Include="ndb\node\IExtendedBlock.cs" />
+    <Compile Include="ndb\node\IExternalBlock.cs" />
+    <Compile Include="ndb\node\INodeStream.cs" />
+    <Compile Include="ndb\node\INodeStreamDevice.cs" />
+    <Compile Include="ndb\node\ISubNodeBlock.cs" />
+    <Compile Include="ndb\node\ISubNodeLeafBlock.cs" />
+    <Compile Include="ndb\node\ISubNodeNonLeafBlock.cs" />
+    <Compile Include="util\btree\IBtreeNode.cs" />
+    <Compile Include="util\btree\IBtreeNodeLeaf.cs" />
+    <Compile Include="util\btree\IBtreeNodeNonLeaf.cs" />
+    <Compile Include="util\primitives\BlockID.cs" />
+    <Compile Include="disk\block\BlockType.cs" />
+    <Compile Include="disk\block\block_reference.cs" />
+    <Compile Include="disk\page\bt_entry.cs" />
+    <Compile Include="disk\page\bt_page.cs" />
+    <Compile Include="disk\header\CryptMethod.cs" />
+    <Compile Include="disk\header\DatabaseFormat.cs" />
+    <Compile Include="disk\header\DatabaseType.cs" />
+    <Compile Include="disk\Disk.cs" />
+    <Compile Include="disk\page\dlist_page.cs" />
+    <Compile Include="disk\page\entry.cs" />
+    <Compile Include="disk\page\fmap_page.cs" />
+    <Compile Include="disk\page\fpmap_page.cs" />
+    <Compile Include="disk\header\header.cs" />
+    <Compile Include="disk\header\header_crc_locations.cs" />
+    <Compile Include="disk\propertycontext\IPropEntry.cs" />
+    <Compile Include="disk\page\nbt_leaf_entry.cs" />
+    <Compile Include="disk\page\nbt_leaf_page.cs" />
+    <Compile Include="disk\page\nbt_nonleaf_page.cs" />
+    <Compile Include="disk\page\page.cs" />
+    <Compile Include="disk\page\page_trailer.cs" />
+    <Compile Include="disk\page\pmap_page.cs" />
+    <Compile Include="disk\header\root.cs" />
+    <Compile Include="disk\header\unicodeheader.cs" />
+    <Compile Include="disk\header\unicode_header_crc_locations.cs" />
+    <Compile Include="disk\page\unicode_page_trailer.cs" />
+    <Compile Include="disk\tablecontext\TCOffsets.cs" />
+    <Compile Include="util\primitives\BlockIDDisk.cs" />
+    <Compile Include="util\primitives\BlockInfo.cs" />
+    <Compile Include="util\primitives\BTKey.cs" />
+    <Compile Include="util\primitives\Count.cs" />
+    <Compile Include="util\primitives\Location.cs" />
+    <Compile Include="util\primitives\NameId.cs" />
+    <Compile Include="util\primitives\NidIndex.cs" />
+    <Compile Include="util\primitives\NodeInfo.cs" />
+    <Compile Include="util\primitives\PageID.cs" />
+    <Compile Include="util\primitives\Primitives.cs" />
+    <Compile Include="util\primitives\HeapID.cs" />
+    <Compile Include="util\primitives\HeapNodeID.cs" />
+    <Compile Include="util\primitives\NidType.cs" />
+    <Compile Include="disk\page\PageType.cs" />
+    <Compile Include="ltp\heap\IBTHLeafNode.cs" />
+    <Compile Include="ltp\heap\IBTHNode.cs" />
+    <Compile Include="ltp\heap\IBTHNonleafNode.cs" />
+    <Compile Include="ltp\heap\IHeap.cs" />
+    <Compile Include="ltp\heap\IHidStreamDevice.cs" />
+    <Compile Include="ltp\IHnidStreamDevice.cs" />
+    <Compile Include="ltp\IPropertyObject.cs" />
+    <Compile Include="ltp\nameid\INamedProperty.cs" />
+    <Compile Include="ltp\nameid\INameIDMap.cs" />
+    <Compile Include="ltp\propbag\IPCBTHLeafNode.cs" />
+    <Compile Include="ltp\propbag\IPCBTHNode.cs" />
+    <Compile Include="ltp\propbag\IPCBTHNonleafNode.cs" />
+    <Compile Include="ltp\propbag\IPropertyBag.cs" />
+    <Compile Include="ltp\table\ITable.cs" />
+    <Compile Include="ltp\table\ITableRow.cs" />
+    <Compile Include="ndb\node\INode.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="pst\folder\IFolder.cs" />
+    <Compile Include="pst\folder\ISearchFolder.cs" />
+    <Compile Include="pst\IPst.cs" />
+    <Compile Include="pst\message\IAttachment.cs" />
+    <Compile Include="pst\message\IMessage.cs" />
+    <Compile Include="pst\message\IRecipient.cs" />
+    <Compile Include="util\primitives\EntryID.cs" />
+    <Compile Include="util\primitives\IKeyValuePair.cs" />
+    <Compile Include="util\primitives\NodeID.cs" />
+    <Compile Include="util\primitives\PropId.cs" />
+    <Compile Include="util\primitives\IPropType.cs" />
+    <Compile Include="util\primitives\IRowID.cs" />
+    <Compile Include="util\primitives\PredefinedNid.cs" />
+    <Compile Include="util\primitives\PropertyType.cs" />
+    <Compile Include="util\primitives\PropType.cs" />
+    <Compile Include="util\primitives\RecipientType.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="util\primitives\README.TXT" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="disk\nameid\" />
+    <Folder Include="ndb\context\" />
+    <Folder Include="ndb\page\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

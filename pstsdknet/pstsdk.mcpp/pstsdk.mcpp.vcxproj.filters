@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include=".Headers">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="ltp">
+      <UniqueIdentifier>{38f7620c-df51-4a33-942e-d26e625bf397}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ltp\table">
+      <UniqueIdentifier>{82cfca90-1d08-40c6-974d-48333c2217b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ltp\table\headers">
+      <UniqueIdentifier>{347a38b5-7f0b-4f09-aa19-74d1109cb620}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ltp\headers">
+      <UniqueIdentifier>{8f98b664-b0cd-4750-a302-30c847f698c1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ltp\propbag">
+      <UniqueIdentifier>{70590a83-0f45-4cc6-976d-fcec08225033}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ltp\propbag\headers">
+      <UniqueIdentifier>{d2daf43e-8e26-4a48-867d-3231d355696c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ltp\object">
+      <UniqueIdentifier>{b611c41d-3911-4f93-b2f7-8d9886849cec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ltp\object\headers">
+      <UniqueIdentifier>{4342adc6-4a8d-485e-ad97-09ddcc09188d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ndb">
+      <UniqueIdentifier>{cfcdb86c-72ee-4991-84e1-0ae23641f6ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ndb\node">
+      <UniqueIdentifier>{46ae268c-a3a1-4296-9fe2-43e4c758ef8e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ndb\node\headers">
+      <UniqueIdentifier>{00046083-619c-43aa-bf34-88b575a72c1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ndb\context">
+      <UniqueIdentifier>{41b7242e-13bb-48c0-a36a-7e78057eaa98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ndb\context\headers">
+      <UniqueIdentifier>{112e5205-01e2-4fd8-8219-44ffc4dac288}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ndb\block">
+      <UniqueIdentifier>{f1d5ee3b-8738-49ec-8657-79c7ab7801fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ndb\block\headers">
+      <UniqueIdentifier>{2314ca55-3b85-48e8-b129-de41e37051b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{b8385525-ba09-4dec-b975-0f4867ae02b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\headers">
+      <UniqueIdentifier>{83666a00-36be-4d4d-a56c-fd3928ae5feb}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Stdafx.h">
+      <Filter>.Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="toolkit.h">
+      <Filter>.Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ltp\table\Table.h">
+      <Filter>ltp\table\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ltp\table\TableRow.h">
+      <Filter>ltp\table\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ltp\propbag\PropertyBag.h">
+      <Filter>ltp\propbag\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ltp\object\HnidStreamDevice.h">
+      <Filter>ltp\object\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ndb\node\Node.h">
+      <Filter>ndb\node\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ndb\node\NodeInfoCollection.h">
+      <Filter>ndb\node\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ndb\context\DBAccessor.h">
+      <Filter>ndb\context\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ndb\block\BlockInfoCollection.h">
+      <Filter>ndb\block\headers</Filter>
+    </ClInclude>
+    <ClInclude Include="util\clr_scoped_ptr.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util\PropertyHelper.h">
+      <Filter>util\headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ltp\table\Table.cpp">
+      <Filter>ltp\table</Filter>
+    </ClCompile>
+    <ClCompile Include="ltp\table\TableRow.cpp">
+      <Filter>ltp\table</Filter>
+    </ClCompile>
+    <ClCompile Include="ltp\propbag\PropertyBag.cpp">
+      <Filter>ltp\propbag</Filter>
+    </ClCompile>
+    <ClCompile Include="ltp\object\HnidStreamDevice.cpp">
+      <Filter>ltp\object</Filter>
+    </ClCompile>
+    <ClCompile Include="ndb\node\NodeInfoCollection.cpp">
+      <Filter>ndb\node</Filter>
+    </ClCompile>
+    <ClCompile Include="ndb\context\DBAccessor.cpp">
+      <Filter>ndb\context</Filter>
+    </ClCompile>
+    <ClCompile Include="ndb\block\BlockInfoCollection.cpp">
+      <Filter>ndb\block</Filter>
+    </ClCompile>
+    <ClCompile Include="util\PropertyHelper.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="AssemblyInfo.cpp" />
+    <ClCompile Include="Stdafx.cpp" />
+    <ClCompile Include="toolkit.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="changelog.txt" />
+    <Text Include="compilation.notes.txt" />
+  </ItemGroup>
+</Project>

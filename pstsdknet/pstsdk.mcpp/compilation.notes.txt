@@ -1,0 +1,40 @@
+PST SDK MC++ Wrapper: Compilation Notes
+----------------------------------------
+
+This project depends on the unmanaged C++ pstsdk project. That project depends on boost v1.42.
+
+Links:
+----------------------------------------
+
+PSTSDK Project Site: 
+  http://pstsdk.codeplex.com
+
+PSTSDK SVN: 
+  https://fairport.svn.codeplex.com/svn
+
+Boost Project Site:
+  http://www.boost.org/
+
+Boost Package Download:
+  http://sourceforge.net/projects/boost/files/boost/1.42.0/boost_1_42_0.zip/download
+
+  
+  
+Expected Locations of Dependencies
+----------------------------------------
+
+To correctly compile this project you must first download the source code 
+for those projects and place the code in the appropriate locations. 
+
+Here's an example folder structure, assuming a root directory called 
+"C:\code", starting with the location of this file, and showing you 
+the expected relative locations of various other files :
+
+  C:\code\pstsdknet\trunk\pstsdk.mcpp\compilation.notes.txt
+  C:\code\pstsdknet\trunk\pstsdk.definition\pstsdk.definition.csproj
+  C:\code\pstsdk\fairport\trunk\pstsdk\compiler_notes.txt
+  C:\code\boost_1_42_0\README.TXT
+
+Assuming all these files and folders are in the correct location, the code should compile. This has been tested in Visual Studio 2008 only. YMMV with anything else.
+
+For help, please contact Troy Howard at thoward37@gmail.com or Christopher Currens at currens.chris@gmail.com

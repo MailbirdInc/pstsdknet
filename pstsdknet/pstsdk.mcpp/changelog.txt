@@ -1,0 +1,25 @@
+2010/10/14 -------------
+	-- I've stopped updating this.  See out codeplex project website for change information. 		http://pstsdknet.codeplex.com/
+
+2010/09/11 -------------
+	-- added more functionality to Pst and Folder classes.  Can view some minor properties
+	
+2010/09/10 -------------
+	-- Seperated mcpp Pst Class into Header and Code
+	-- Seperated mcpp Folder Class into Header and Code
+	-- Seperated mcpp SearchFolder Class into Header and Code
+	-- Seperated mcpp Attachment Class into Header and Code
+	-- Seperated mcpp Message Class into Header and Code
+
+2010/09/08 -------------
+    -- Made a bunch of changes to the folder structure
+
+2010/09/08 -------------
+	-- Added pstsdk source code under dir \pstsdk.cpp
+	
+	-- Added mcpp Pst Class structure implementing Pst
+	-- Added mcpp Folder Class structure implementing IFolder
+	-- Added mcpp SearchFolder Class structure implementing ISearchFolder
+	-- Added mcpp Attachment Class structure implementing IAttachment
+	-- Added mcpp Message Class structure implementing IMessage
+	-- Added mcpp Recipient Class structure implementing IRecipient
