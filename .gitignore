@@ -20,3 +20,8 @@ pstsdknet/Backup/
 pstsdknet/samples/nameprop/obj/
 pstsdknet/pstsdk.net.sdf
 pstsdknet/pstsdk.net.opensdf
+pstsdknet/pstsdk.mcpp/x64/
+pstsdknet/debug/
+pstsdknet/pstsdk.definition/Debug/
+pstsdknet/pstsdk.definition/Release/
+pstsdknet/pstsdk.mcpp/Debug/

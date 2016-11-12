@@ -1,13 +1,11 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using pstsdk.definition.ltp;
 using pstsdk.definition.ndb.database;
 using pstsdk.definition.pst.message;
 using pstsdk.definition.util.primitives;
 using pstsdk.layer.util;
-using pstsdk.mcpp.ndb.database;
 using pstsdk.mcpp.util.prop;
 
 namespace pstsdk.layer.pst

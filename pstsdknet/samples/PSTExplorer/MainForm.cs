@@ -17,6 +17,7 @@ using pstsdk.definition.pst.message;
 using pstsdk.definition.util.primitives;
 using pstsdk.layer.ltp.nameid;
 using pstsdk.layer.pst;
+using System.Reflection;
 
 namespace PSTExplorer
 {
@@ -29,6 +30,19 @@ namespace PSTExplorer
         public MainForm()
         {
             InitializeComponent();
+            AppDomain.CurrentDomain.AssemblyResolve += CurrentDomain_AssemblyResolve;
+        }
+
+        System.Reflection.Assembly CurrentDomain_AssemblyResolve(object sender, ResolveEventArgs args)
+        {
+            if (args.Name.StartsWith("pstsdk.mcpp", StringComparison.OrdinalIgnoreCase))
+            {
+                string fileName = Path.Combine(System.IO.Path.GetDirectoryName(Assembly.GetEntryAssembly().Location),
+                string.Format("pstsdk.mcpp.{0}.dll", (IntPtr.Size == 4) ? "x86" : "x64"));
+
+                return Assembly.LoadFile(fileName);
+            }
+            return null;
         }
 
         private void openToolStripMenuItem_Click(object sender, EventArgs e)

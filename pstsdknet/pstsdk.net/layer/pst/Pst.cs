@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Text;
-
-using pstsdk.definition.exception;
+﻿using pstsdk.definition.exception;
 using pstsdk.definition.ltp;
 using pstsdk.definition.ltp.nameid;
 using pstsdk.definition.ndb.database;
@@ -14,7 +9,9 @@ using pstsdk.definition.util.primitives;
 using pstsdk.layer.ltp.nameid;
 using pstsdk.layer.util;
 using pstsdk.mcpp.ndb.database;
-using pstsdk.mcpp.util.prop;
+using System;
+using System.Collections.Generic;
+using System.IO;
 
 namespace pstsdk.layer.pst
 {
@@ -28,6 +25,13 @@ namespace pstsdk.layer.pst
         {
             _dbContext = new DBContext(path);
             _propBag = _dbContext.GetPropertyObjectByNodeId((uint)NodeID.Predefined.nid_message_store);
+
+            AppDomain.CurrentDomain.AssemblyResolve += CurrentDomain_AssemblyResolve;
+        }
+
+        System.Reflection.Assembly CurrentDomain_AssemblyResolve(object sender, ResolveEventArgs args)
+        {
+            return null;
         }
 
         #region IPst Members
