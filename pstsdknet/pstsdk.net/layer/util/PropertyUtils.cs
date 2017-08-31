@@ -90,7 +90,7 @@ namespace pstsdk.layer.util
                 var entryOffset = BitConverter.ToInt32(values, 4 + i*4);
                 var entryLength = (i < entries - 1) ? BitConverter.ToInt32(values, 4 + (i + 1) * 4) - entryOffset : values.Length - entryOffset;
 
-                var entry = new byte[24];
+                var entry = new byte[entryLength];
                 Array.Copy(values, entryOffset, entry, 0, entryLength);
                 
                 result[i] = entry;
