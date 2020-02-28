@@ -4,16 +4,6 @@
         "pstsdk.mcpp"
     </assembly>
     <members>
-        <member name="M:pstsdk.mcpp.ndb.database.DBContext.GetSubObjectByNodeId(pstsdk.definition.ltp.IPropertyObject,System.UInt32)">
-            <summary>
-Returns a new IPropertyObject using a NodeId from an SubObject's NBT
-</summary>
-        </member>
-        <member name="M:pstsdk.mcpp.ndb.database.DBContext.GetPropertyObjectByNodeId(System.UInt32)">
-            <summary>
-Returns a new IPropertyObject using a NodeId from the Root NBT
-</summary>
-        </member>
         <member name="M:pstsdk.mcpp.util.prop.PropertyHelper.GetMultipleBinaryProperty(System.Byte[])">
             <summary>
                 <para>
@@ -299,6 +289,16 @@ Returns a new IPropertyObject using a NodeId from the Root NBT
 </remarks>
             <seealso name="GetMultipleInt16Property" />
             <param name="propertyBytes">array of bytes representing property data</param>
+        </member>
+        <member name="M:pstsdk.mcpp.ndb.database.DBContext.GetSubObjectByNodeId(pstsdk.definition.ltp.IPropertyObject,System.UInt32)">
+            <summary>
+Returns a new IPropertyObject using a NodeId from an SubObject's NBT
+</summary>
+        </member>
+        <member name="M:pstsdk.mcpp.ndb.database.DBContext.GetPropertyObjectByNodeId(System.UInt32)">
+            <summary>
+Returns a new IPropertyObject using a NodeId from the Root NBT
+</summary>
         </member>
         <member name="M:pstsdk.mcpp.ltp.object.HnidStreamDevice.#ctor(pstsdk.definition.ltp.IPropertyObject,pstsdk.definition.util.primitives.PropId)">
             <exclude />

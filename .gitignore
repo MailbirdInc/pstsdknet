@@ -25,3 +25,6 @@ pstsdknet/debug/
 pstsdknet/pstsdk.definition/Debug/
 pstsdknet/pstsdk.definition/Release/
 pstsdknet/pstsdk.mcpp/Debug/
+pstsdknet/.vs
+pstsdknet/pstsdk.mcpp/Release/
+*.user
