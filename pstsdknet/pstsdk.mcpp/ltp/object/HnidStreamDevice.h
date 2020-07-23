@@ -6,7 +6,7 @@
 #include "..\table\TableRow.h"
 #include "..\propbag\PropertyBag.h"
 
-using namespace std;
+//using namespace std;
 using namespace System;
 using namespace System::IO;
 using namespace System::Collections::Generic;

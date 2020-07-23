@@ -1,6 +1,6 @@
 #pragma once
 
-#include "StdAfx.h"
+#include "Stdafx.h"
 #include "pst.h"
 
 using namespace System;

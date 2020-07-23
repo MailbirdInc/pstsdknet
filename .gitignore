@@ -28,3 +28,5 @@ pstsdknet/pstsdk.mcpp/Debug/
 pstsdknet/.vs
 pstsdknet/pstsdk.mcpp/Release/
 *.user
+pstsdknet/x64/
+pstsdknet/pstsdk.mcpp/pstsdk.mcpp.test/bin/

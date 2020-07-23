@@ -81,8 +81,8 @@
       <Project>{4CCADB3D-5DF5-47E3-BD52-0B1552C84C15}</Project>
       <Name>pstsdk.definition</Name>
     </ProjectReference>
-    <ProjectReference Include="..\pstsdk.mcpp.vcproj">
-      <Project>{A82CD6F8-EF49-49E3-AEFC-2D24623D3941}</Project>
+    <ProjectReference Include="..\pstsdk.mcpp.vcxproj">
+      <Project>{a82cd6f8-ef49-49e3-aefc-2d24623d3941}</Project>
       <Name>pstsdk.mcpp</Name>
     </ProjectReference>
   </ItemGroup>
