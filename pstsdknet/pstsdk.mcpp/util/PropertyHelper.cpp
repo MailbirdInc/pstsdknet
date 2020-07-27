@@ -1,4 +1,4 @@
-#include "StdAfx.h"
+#include "Stdafx.h"
 #include "pst.h"
 #include "util\primitives.h"
 #include "PropertyHelper.h"

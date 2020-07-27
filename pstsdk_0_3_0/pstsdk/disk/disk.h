@@ -206,6 +206,7 @@ static_assert(offsetof(header<ulonglong>, rgnid) == 44, "header<ulonglong> rgnid
 static_assert(offsetof(header<ulonglong>, root_info) == 176, "header<ulonglong> root_info at incorrect offset");
 static_assert(offsetof(header<ulonglong>, rgbFM) == 256, "header<ulonglong> rgbFM at incorrect offset");
 static_assert(offsetof(header<ulonglong>, dwCRCFull) == 524, "header<ulonglong> dwCRCFull at incorrect offset");
+
 //! \endcond
 
 //! \brief The ANSI header structure

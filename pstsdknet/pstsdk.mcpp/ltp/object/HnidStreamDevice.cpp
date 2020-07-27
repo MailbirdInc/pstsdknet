@@ -6,7 +6,7 @@
 #include "..\..\ndb\context\DBAccessor.h"
 #include "pst.h"
 
-using namespace std;
+//using namespace std;
 
 using namespace System;
 using namespace System::Collections::Generic;

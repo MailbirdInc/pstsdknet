@@ -135,6 +135,9 @@ public:
     attachment_transform(attachment_transform&& other)
         : m_node(std::move(other.m_node)) { }
 #endif
+    attachment_transform(const attachment_transform& other)
+        : m_node(other.m_node) { }
+
     //! \brief Perform the transform
     //! \param[in] row A row from the messages attachment table
     //! \returns An attachment object
